@@ -13,7 +13,9 @@ export interface ContextValue {
   // token: string
 }
 
-interface CloudflareEnv {}
+interface CloudflareEnv {
+  GRAPHQL_PATH: string
+}
 
 let handler: ExportedHandlerFetchHandler<CloudflareEnv>
 
@@ -42,7 +44,7 @@ export default {
             // token,
           }
         },
-        path: '/graphql',
+        path: environment.GRAPHQL_PATH,
       })
     }
 
