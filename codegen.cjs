@@ -4,7 +4,6 @@ module.exports = {
   generates: {
     './src/types/schema.generated.ts': {
       config: {
-        // federation: true,
         immutableTypes: true,
         useIndexSignature: true,
         useTypeImports: true,
