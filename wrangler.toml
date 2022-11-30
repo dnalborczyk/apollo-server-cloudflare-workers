@@ -1,5 +1,5 @@
 name = "apollo-server-cloudflare-workers"
-main = "./build/index.js"
+main = "./dist/index.js"
 
 compatibility_date = "2022-11-30"
 

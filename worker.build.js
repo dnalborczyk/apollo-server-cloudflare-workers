@@ -11,7 +11,7 @@ try {
     entryPoints: ['./src/index.ts'],
     format: 'esm',
     minify: isProd,
-    outdir: 'build',
+    outdir: 'dist',
     plugins: [
       NodeGlobalsPolyfillPlugin({
         buffer: true,
