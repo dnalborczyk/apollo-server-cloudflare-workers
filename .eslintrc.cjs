@@ -15,13 +15,8 @@ module.exports = {
   },
   plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/require-await': 'off',
     'class-methods-use-this': 'off',
-    'import/prefer-default-export': 'off',
-
-    // temp:
-    '@typescript-eslint/no-empty-interface': 'off',
-    '@typescript-eslint/no-unsafe-assignment': 'off',
-    '@typescript-eslint/no-unsafe-call': 'off',
   },
 }
