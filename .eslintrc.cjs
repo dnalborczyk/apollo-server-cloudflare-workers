@@ -17,5 +17,6 @@ module.exports = {
   rules: {
     '@typescript-eslint/require-await': 'off',
     'class-methods-use-this': 'off',
+    'no-restricted-exports': 'off',
   },
 }

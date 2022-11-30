@@ -1,7 +1,7 @@
 import type { Resolvers } from '../types/schema.generated.js'
-import type { ContextValue } from '../index.js'
+import type Context from '../Context.js'
 
-const resolvers: Resolvers<ContextValue> = {
+const resolvers: Resolvers<Context> = {
   Query: {
     async location(parent, args, context) {
       return context.dataSources.locationsDataSource.getLocation(args.id)
