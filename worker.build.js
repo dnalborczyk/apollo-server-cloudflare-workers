@@ -1,4 +1,4 @@
-import { env } from 'node:process'
+import { env, exit } from 'node:process'
 import { build } from 'esbuild'
 import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill'
 import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill'
@@ -21,5 +21,5 @@ try {
     sourcemap: true,
   })
 } catch {
-  process.exit(1)
+  exit(1)
 }
