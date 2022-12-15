@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
     "build": "rimraf build && NODE_ENV=production node worker.build.js",
+    "start": "wrangler dev --experimental-local",
     "generate": "graphql-codegen --config ./codegen.cjs",
     "lint": "eslint .",
     "prettier": "prettier --check .",
@@ -23,6 +24,7 @@
     "@graphql-codegen/cli": "^2.16.1",
     "@graphql-codegen/typescript": "^2.8.5",
     "@graphql-codegen/typescript-resolvers": "^2.7.10",
+    "@miniflare/tre": "^3.0.0-next.10",
     "@typescript-eslint/eslint-plugin": "^5.46.1",
     "@typescript-eslint/parser": "^5.46.1",
     "esbuild": "^0.16.7",
