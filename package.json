@@ -3,12 +3,12 @@
   "type": "module",
   "scripts": {
     "build": "rimraf build && NODE_ENV=production node worker.build.js",
-    "start": "wrangler dev --experimental-local",
     "generate": "graphql-codegen --config ./codegen.cjs",
     "lint": "eslint .",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
     "publish": "wrangler publish",
+    "start": "wrangler dev --experimental-local",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
